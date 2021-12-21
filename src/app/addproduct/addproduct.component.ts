@@ -17,6 +17,7 @@ export class AddproductComponent implements OnInit {
   ngOnInit(): void {
     this.productForm=this.formBuilder.group({
       name :[''],
+      author:[''],
       price:[''],
       ISBN:['']
   })

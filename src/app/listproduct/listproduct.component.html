@@ -4,6 +4,7 @@
             <tr>
                 <th>Id</th>
                 <th>Name</th>
+                <th>Author</th>
                 <th>Price</th>
                 <th>ISBN</th>
             </tr>
@@ -12,6 +13,7 @@
             <tr *ngFor='let product of productList'>
                 <td>{{product.id}}</td>
                 <td>{{product.name}}</td>
+                <td>{{product.author}}</td>
                 <td>{{product.price}}</td>
                 <td>{{product.ISBN}}</td>
             </tr>
