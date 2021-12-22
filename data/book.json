@@ -1,10 +1,11 @@
 {
   "books": [
     {
-      "name": "the alchemist",
+      "name": "The Alchemist",
       "author": "paulo coelho",
       "price": "599",
       "ISBN": "1212120003",
+      "DoP": "1998",
       "id": 1
     },
     {
@@ -12,6 +13,7 @@
       "author": "J. R. R. Tolkien",
       "price": "776",
       "ISBN": "95794934",
+      "DoP": "1954",
       "id": 2
     },
     {
@@ -19,7 +21,16 @@
       "author": "JK Rowling",
       "price": "1000",
       "ISBN": "030289832",
+      "DoP": "1997",
       "id": 3
+    },
+    {
+      "name": "The Theory of Everything",
+      "author": "Stephen hawking",
+      "price": "899",
+      "ISBN": "90492",
+      "DoP": "2002",
+      "id": 4
     }
   ]
 }

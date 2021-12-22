@@ -19,7 +19,8 @@ export class AddproductComponent implements OnInit {
       name :[''],
       author:[''],
       price:[''],
-      ISBN:['']
+      ISBN:[''],
+      DoP:['']
   })
 }
 addProduct(){

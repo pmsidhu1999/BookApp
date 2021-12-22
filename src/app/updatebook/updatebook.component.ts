@@ -23,7 +23,8 @@ export class UpdatebookComponent implements OnInit {
       name : [''],
       author : [''],
       price: [''],
-      ISBN:['']
+      ISBN:[''],
+      DoP:['']
     })
     this.id=this.route.snapshot.params["ust"]
     alert("selected id " + this.id)

@@ -4,4 +4,5 @@ export interface Product {
     author?:string;
     price?:number;
     ISBN?:number;
+    DoP?:string;
 } 
