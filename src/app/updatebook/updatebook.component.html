@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Update Book</h1>
+    <form [formGroup]='updateProductForm' (ngSubmit)='updateBook()'>
+        <div class="form-group mb-3">
+            <label for="pname">Book Name</label>
+            <input id="pname" class="form-control w-50" type="text" formControlName="name">
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="pname">Author</label>
+            <input id="pname" class="form-control w-50" type="text" formControlName="author">
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="pprice">Book Price</label>
+            <input id="pprice" class="form-control w-50" type="text" formControlName="price">
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="pquantity">ISBN</label>
+            <input id="pquantity" class="form-control w-50" type="text" formControlName="ISBN">
+        </div>
+
+        <div class="form-group mb-3">
+            <input class="btn btn-outline-primary" type="submit" value="Update Product">
+        </div>
+    </form>
+
+    {{message}}
+</div>

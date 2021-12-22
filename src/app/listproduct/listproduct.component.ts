@@ -18,5 +18,13 @@ export class ListproductComponent implements OnInit {
         this.productList=data;     
     })
   }
+  deleteBook(id:any){
+    this.service.deleteProduct(id).subscribe(data=>{
+      alert("Deleted");
+    },
+    error=>{
+      alert("Error");
+    })
+  }
 
 }

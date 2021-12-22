@@ -7,6 +7,7 @@
                 <th>Author</th>
                 <th>Price</th>
                 <th>ISBN</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -16,6 +17,10 @@
                 <td>{{product.author}}</td>
                 <td>{{product.price}}</td>
                 <td>{{product.ISBN}}</td>
+                <td>
+                    <a routerLink="/update-book/{{product.id}}"> <i class="fas fa-edit"></i></a>
+                    <a (click)="deleteBook(product.id)"><i class="fas fa-trash ms-3"></i></a>
+                </td>
             </tr>
         </tbody>
     </table>

@@ -25,5 +25,15 @@ export class BookService {
   getAllProduct():Observable<Product[]>{
     return this.httpClient.get<Product[]>(this.url);
   }
+  getProductById(id:any):Observable<Product>{
+    return this.httpClient.get(this.url+`/${id}`);
+  }
+  updateProduct(id:number,product:Product) {
+    return this.httpClient.put<Product>(this.url+`/${id}`,product)      
+}
+
+  deleteProduct(id:number) {
+    return this.httpClient.delete(this.url+`/${id}`)      
+}
 
 }
